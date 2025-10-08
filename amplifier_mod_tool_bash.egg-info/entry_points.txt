@@ -1,2 +1,0 @@
-[amplifier.modules]
-tool-bash = amplifier_mod_tool_bash:mount
