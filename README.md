@@ -16,6 +16,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # Windows
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
+
 ## Purpose
 
 Enables agents to execute bash commands in a controlled environment for system interactions, build operations, and automation tasks.
@@ -24,18 +25,21 @@ Enables agents to execute bash commands in a controlled environment for system i
 
 **Module Type:** Tool
 **Mount Point:** `tools`
-**Entry Point:** `amplifier_mod_tool_bash:mount`
+**Entry Point:** `amplifier_module_tool_bash:mount`
 
 ## Tools Provided
 
 ### `bash`
+
 Execute a bash command.
 
 **Input:**
+
 - `command` (string): The bash command to execute
 - `timeout` (int, optional): Timeout in seconds (default: 30)
 
 **Output:**
+
 - Command output (stdout/stderr combined)
 - Exit code
 - Timeout indication if applicable
